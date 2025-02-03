@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:projectm_mobile/screens/signin_screen.dart';
 import 'package:projectm_mobile/screens/signup_screen.dart';
+import 'package:projectm_mobile/themes/theme.dart';
 import 'package:projectm_mobile/widgets/custom_scaffold.dart';
 import 'package:projectm_mobile/widgets/welcome_button.dart';
 
@@ -44,6 +45,7 @@ class WelcomeScreen extends StatelessWidget {
                       buttonText: 'Entre',
                       onTap: SigninScreen(),
                       color: Colors.transparent,
+                      textColor: Colors.white,
                     ),
                   ),
                   Expanded(
@@ -51,6 +53,7 @@ class WelcomeScreen extends StatelessWidget {
                       buttonText: 'Cadastre-se',
                       onTap: SignUpScreen(),
                       color: Colors.white,
+                      textColor: lightColorScheme.primary,
                     ),
                   )
                 ]),
